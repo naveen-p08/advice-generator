@@ -10,6 +10,18 @@ function App() {
         </p>
         <p className={"advice-text"}>{advice}</p>
       </div>
+      <div className={"partition"}>
+        <picture aria-hidden={true}>
+          <source
+            media="(min-width: 45em)"
+            srcSet="./images/pattern-divider-desktop.svg"
+          />
+          <img
+            src="./images/pattern-divider-mobile.svg"
+            alt="divider pattern"
+          />
+        </picture>
+      </div>
     </>
   );
 }

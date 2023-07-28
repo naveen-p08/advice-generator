@@ -13,6 +13,11 @@ html {
   font-size: 62.5%;
 }
 
+picture,
+img {
+  max-width: 100%;
+}
+
 :root {
   --fs-200: 1.2rem;
   --fs-400: 2.4rem;
@@ -72,4 +77,10 @@ body {
 
 .advice-text {
   font-size: var(--fs-400);
+}
+
+.partition {
+  display: flex;
+  justify-content: center;
+  margin-block: 3rem;
 }

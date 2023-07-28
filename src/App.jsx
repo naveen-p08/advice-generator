@@ -1,11 +1,6 @@
 function App() {
-
-
-  return (
-    <>
-        hello react
-    </>
-  )
+  const number = 5;
+  return <></>;
 }
 
-export default App
+export default App;

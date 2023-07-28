@@ -124,3 +124,9 @@ body {
   height: 5.3rem;
   box-shadow: 0 0 20px hsl(var(--neon-green));
 }
+
+.fetch-button[disabled] {
+  background: hsl(var(--gray-blue));
+  box-shadow: none;
+  cursor: not-allowed;
+}

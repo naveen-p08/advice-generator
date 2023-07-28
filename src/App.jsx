@@ -52,6 +52,7 @@ function App() {
         className={"fetch-button"}
         onClick={handleClick}
         disabled={isLoading}
+        autoFocus={isLoading}
       >
         <span className={"visually-hidden"}>Get Advice</span>
         <img src="./images/icon-dice.svg" alt="dice icon" aria-hidden={true} />

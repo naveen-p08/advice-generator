@@ -40,6 +40,17 @@ img {
   }
 }
 
+/*  From A11y project https://www.a11yproject.com/posts/how-to-hide-content/*/
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 body {
   font-family: var(--ff-manrope);
   font-weight: var(--fw-bold);
@@ -58,6 +69,8 @@ body {
   padding: 4rem;
   border-radius: 1rem;
   max-width: 55rem;
+
+  position: relative;
 }
 
 .advice-container {
@@ -83,4 +96,31 @@ body {
   display: flex;
   justify-content: center;
   margin-block: 3rem;
+}
+
+.fetch-button {
+  position: absolute;
+  bottom: calc(0px - 2.25rem);
+  left: calc(50% - 2.25rem);
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  line-height: 0;
+  background: hsl(var(--neon-green));
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: box-shadow 250ms ease;
+}
+
+.fetch-button:hover,
+.fetch-button:focus-visible {
+  box-shadow: 0 0 30px hsl(var(--neon-green));
+}
+
+.fetch-button:active {
+  width: 5.3rem;
+  height: 5.3rem;
+  box-shadow: 0 0 20px hsl(var(--neon-green));
 }

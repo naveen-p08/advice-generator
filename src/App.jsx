@@ -10,6 +10,7 @@ function App() {
         </p>
         <p className={"advice-text"}>{advice}</p>
       </div>
+
       <div className={"partition"}>
         <picture aria-hidden={true}>
           <source
@@ -22,6 +23,11 @@ function App() {
           />
         </picture>
       </div>
+
+      <button className={"fetch-button"}>
+        <span className={"visually-hidden"}>Get Advice</span>
+        <img src="./images/icon-dice.svg" alt="dice icon" aria-hidden={true} />
+      </button>
     </>
   );
 }

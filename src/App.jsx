@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function App() {
-  const [advice, setAdvice] = useState("Press the Button to get a advice");
+  const [advice, setAdvice] = useState("Press the Button to get a Advice");
   const [idNumber, setIdNumber] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 

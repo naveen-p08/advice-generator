@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Here]()
+- Solution URL: [Here](https://github.com/naveen-p08/advice-generator)
 - Live Site URL: [Here](https://adviceforfree.netlify.app/)
 
 ## My process
